@@ -1,0 +1,17 @@
+{
+  "name": "vanilla-carousel",
+  "version": "1.0.0",
+  "description": "Image carousel with HTML, CSS and JS",
+  "main": "script.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Piotr Szponar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1"
+  }
+}
