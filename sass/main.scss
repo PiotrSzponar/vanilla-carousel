@@ -27,13 +27,16 @@ html {
     }
 
     &__track-container {
-        background: pink;
         height: 100%;
         position: relative;
+        overflow: hidden;
     }
 
     &__track {
         list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform .3s ease-in;
     }
 
     &__slide {
@@ -50,6 +53,7 @@ html {
         background: transparent;
         border: 0;
         cursor: pointer;
+        outline: none;
 
         & img {
             width: 2rem;
@@ -65,7 +69,6 @@ html {
     }
 
     &__nav {
-        background: green;
         display: flex;
         justify-content: center;
         padding: 1rem 0;
@@ -78,6 +81,8 @@ html {
         height: 1.5rem;
         background: rgba(0, 0, 0, .3);
         margin: 0 .5rem;
+        cursor: pointer;
+        outline: none;
 
         &.current-slide {
             background: rgba(0, 0, 0, .7);
